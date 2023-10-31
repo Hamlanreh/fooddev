@@ -1,0 +1,331 @@
+.homepage  {
+    background-image: url(/img/blob-hero.svg), url(/img/blob-haikei-1.svg);
+    background-position: -30% -17%, -51% 18%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 150%, 73%;
+}
+@media screen and (max-width: 970px) {
+    .homepage {
+        background-position: -30% -8%, -51% 14%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .homepage {
+        background-position: -30% -5%, 51% 14%;
+        background-size: 150%, 132%;
+    }
+}
+
+.homeMain {
+    padding-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+} 
+.heroLt {
+    flex: 1;
+    padding: 2rem;
+    padding-top: 6rem;
+}
+.heroBig {
+    font-size: 4.5rem;
+    font-weight: 800;
+    width: 50rem;
+    margin-bottom: 4rem;
+}
+.heroBig1, .heroBig2 {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+} 
+.heroBig1 {
+    background-color: orange;
+    transform: skew(-10deg, 0deg);
+    z-index: 10;
+}
+.heroBig2 {
+    background-color: #000;
+    color: #fff;
+    transform: skew(-10deg, 0deg);
+    z-index: 100;
+    margin-top: -1rem;
+}
+.heroText {
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
+}
+.heroBtnBox { margin-bottom: 4rem; }
+.heroBtn {
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding: 1.5rem 3.5rem;
+    background-color: orange;
+    border-radius: 1rem;
+}
+.more { display: flex; }
+.moreLt { position: relative; }
+.roundBox {
+    background-color: #eee;
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    box-shadow: 2px 4px 2px #333;
+    overflow: hidden;
+}
+.roundBox:hover { 
+    cursor: pointer;
+    z-index: 100; 
+}
+.roundBox1 { position: relative; z-index: 10; }
+.roundBox2 { position: relative; right: 1.5rem; z-index: 20; }
+.roundBox3 { position: relative; right: 3.5rem; z-index: 30; }
+.roundBox4 { position: relative; right: 5.5rem; z-index: 50; }
+.roundImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.moreRt { font-size: 1.3rem; }
+.heroRt {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .heroLt {
+        width: 99%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        text-align: center;
+    }
+    .moreRt { text-align: left; }
+    .heroRt {
+        display: none;
+    }
+}
+/* Hero section end */
+
+
+
+/* About section style start */
+
+.about {
+    min-height: 90vh;
+    padding: 4rem;
+    display: flex;
+}
+.about > div {
+    flex: 1;
+}
+.aboutDetail h4 {
+    font-size: 1.4rem;
+    letter-spacing: .25rem;
+    text-transform: capitalize;
+}
+.aboutDetail h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: .25rem;
+    margin-bottom: 3rem;
+}
+.aboutDetail p {
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+}
+.aboutDetail button {
+    background-color: orange;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: inline-block;
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+}
+.aboutIcon {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+    .about {
+        flex-direction: column;
+    }
+}
+
+/* About section ends */
+
+
+
+/* Home menu section starts */
+.menuHome {
+    min-height: 90vh;
+}
+
+.menuHeader {
+    padding: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.menuHeader p {
+    font-size: 1.4rem;
+    letter-spacing: .25rem;
+    text-transform: capitalize;
+}
+.menuHeader h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: .25rem;
+}
+
+.menuMoreBox {
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuMoreBtn {
+    background-color: orange;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: inline-block;
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+}
+.menuMoreIcon {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Home menu style ends */
+
+
+
+/* Testimonial section starts */
+.testimonial {
+    min-height: 90vh;
+    padding: 4rem 2rem;
+}
+
+.feedbackHeader {
+    width: 95%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.feedbackHeader p {
+    font-size: 1.4rem;
+    letter-spacing: .25rem;
+    text-transform: capitalize;
+}
+.feedbackHeader h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: .25rem;
+}
+.feedbackBtn {
+    background-color: orange;
+    padding: 1rem 2rem;
+}
+.feedbackIcon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.feedbackList {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 55rem));
+    justify-content: center;
+    gap: 4rem;
+}
+
+
+/* Testimonial section ends */
+
+
+
+
+/* Contact section style starts */
+.contact {
+    min-height: 90vh;
+    padding: 4rem;
+    display: flex;
+}
+@media screen and (max-width: 600px) {
+    .contact {
+        flex-direction: column;
+    }
+}
+.contact > div {
+    flex: 1;
+    padding: 2rem;
+}
+.contactMapBox {
+    /* background-color: orange; */
+}
+.contactIconList {
+    margin-top: 10rem;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 4rem;
+}
+.contactIcon {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    color: #000;
+}
+.contactDetail h4 {
+    font-size: 1.4rem;
+    letter-spacing: .25rem;
+    text-transform: capitalize;
+}
+.contactDetail h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: .25rem;
+    margin-bottom: 3rem;
+}
+.contactDetail p {
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+}
+.contactDetail input,
+.contactDetail textarea {
+    display: block;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    width: 85%;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px 2px #eee;
+}
+.contactDetail textarea {    
+    min-height: 25rem;
+    resize: none;
+}
+.contactDetail button {
+    background-color: orange;
+    font-size: 1.7rem;
+    font-weight: 600;
+    display: inline-block;
+    padding: 1rem 5rem;
+    border-radius: 1rem;
+}
+.contactSendIcon {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 1rem;
+}

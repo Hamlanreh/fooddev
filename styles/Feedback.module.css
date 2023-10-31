@@ -1,0 +1,54 @@
+.feedback {
+    position: relative;
+    padding: 2rem;
+    /* font-size: 1.6rem; */
+    /* border-radius: .5rem; */
+    box-shadow: 0 2px 4px 2px #eee;
+}
+.feedbackQuote {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 7rem;
+    height: 7rem;
+    z-index: 2;
+    background-color: orange;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 4rem;
+}
+.feedbackQuoteIcon {
+    display: inline-block;
+    width: 8rem;
+    height: 8rem
+}
+
+.feedbackImg {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 2px #eee;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 50% 0%;
+}
+.feedbackClient {
+    display: flex;
+}
+.feedbackClient > div {
+    padding: 1rem 2rem;
+}
+.feedbackClient h4 {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.feedbackClient p {
+    font-size: 1.3rem;
+}
+.feedbackDetail {
+    padding: 1rem;
+    font-size: 1.4rem;
+}
