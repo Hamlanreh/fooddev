@@ -31,7 +31,7 @@ export default function Cart() {
         .then((res) => res.json())
         .then((data) => setClientSecret(data.clientSecret))
         .catch((err) => console.error(`Stripe payment connection failed!`));
-    }, []);
+    }, [cartData]);
 
     return (
         <>
